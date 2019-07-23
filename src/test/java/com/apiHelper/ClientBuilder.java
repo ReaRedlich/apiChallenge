@@ -1,4 +1,4 @@
-package com.apiHellper;
+package com.apiHelper;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;

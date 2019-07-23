@@ -1,4 +1,4 @@
-package com.apiHellper;
+package com.apiHelper;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

@@ -1,4 +1,4 @@
-package com.apiHellper;
+package com.apiHelper;
 
 import okhttp3.ResponseBody;
 import retrofit2.Call;

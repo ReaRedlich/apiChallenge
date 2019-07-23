@@ -1,4 +1,4 @@
-package com.apiHellper;
+package com.apiHelper;
 
 public class Clients {
     private Clients() {}

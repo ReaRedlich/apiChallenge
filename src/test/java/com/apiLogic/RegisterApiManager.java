@@ -1,7 +1,7 @@
 package com.apiLogic;
 
-import com.apiHellper.Request;
-import com.apiHellper.Validations;
+import com.apiHelper.Request;
+import com.apiHelper.Validations;
 import com.apiLogic.request.UserRegister;
 import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
@@ -14,6 +14,13 @@ public class RegisterApiManager {
     private Validations validations = new Validations();
 
     public Response<ResponseBody> register(RegisterEndPoint registerEndPoint, UserRegister userRegisterRequest) throws IOException {
+        RequestBody requestBody = request.createBody(userRegisterRequest);
+        Call<ResponseBody> call = registerEndPoint.register(requestBody);
+        System.out.println("Api: [" +  call.request().method() + "] "  + call.request().url());
+        return validations.ok(call);
+    }
+
+    public Response<ResponseBody> errorRegister(RegisterEndPoint registerEndPoint, UserRegister userRegisterRequest) throws IOException {
         RequestBody requestBody = request.createBody(userRegisterRequest);
         Call<ResponseBody> call = registerEndPoint.register(requestBody);
         System.out.println("Api: [" +  call.request().method() + "] "  + call.request().url());

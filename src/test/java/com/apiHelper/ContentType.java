@@ -1,4 +1,4 @@
-package com.apiHellper;
+package com.apiHelper;
 
 public enum ContentType {
     JSON("application/json");

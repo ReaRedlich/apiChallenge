@@ -1,4 +1,4 @@
-package com.apiHellper;
+package com.apiHelper;
 
 import com.jayway.jsonpath.Configuration;
 import com.jayway.jsonpath.JsonPath;

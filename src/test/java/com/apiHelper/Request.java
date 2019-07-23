@@ -1,4 +1,4 @@
-package com.apiHellper;
+package com.apiHelper;
 
 import com.google.gson.Gson;
 import okhttp3.MediaType;
