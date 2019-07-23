@@ -8,7 +8,7 @@ public class RegisterTests extends RegisterTestsHelper{
     private RegisterTestsValidation registerTestsValidation = new RegisterTestsValidation();
 
     /**
-     * Please update the external id to values that not exist
+     * Please update the user name and external id to values that not exist
      * Do the update in the test and in method 'callUserRegister()' in class 'RegisterTestsHelper'
      * @throws Exception
      */
