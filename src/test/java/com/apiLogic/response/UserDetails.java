@@ -1,6 +1,5 @@
 package com.apiLogic.response;
 
-
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -28,5 +27,4 @@ public class UserDetails {
     public void setResult(Result result) {
         this.result = result;
     }
-
 }

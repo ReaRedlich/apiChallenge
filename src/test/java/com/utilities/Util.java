@@ -4,7 +4,6 @@ public class Util {
 
     public Util() {}
 
-
     /**
      * This method will check 2 String values and check if they are equal
      *

@@ -27,6 +27,5 @@ public class RegisterError {
     public void setResult(Result result) {
         this.result = result;
     }
-
 }
 

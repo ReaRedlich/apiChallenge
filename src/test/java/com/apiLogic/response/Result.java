@@ -225,5 +225,4 @@ public class Result {
     public void setUserType(UserType userType) {
         this.userType = userType;
     }
-
 }

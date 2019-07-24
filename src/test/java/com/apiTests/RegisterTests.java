@@ -2,7 +2,7 @@ package com.apiTests;
 
 import org.testng.annotations.Test;
 
-public class RegisterTests extends RegisterTestsHelper{
+public class RegisterTests extends RegisterTestsHelper {
 
     public RegisterTests() {}
     private RegisterTestsValidation registerTestsValidation = new RegisterTestsValidation();
