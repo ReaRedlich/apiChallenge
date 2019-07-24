@@ -9,7 +9,7 @@ public class RegisterTests extends RegisterTestsHelper {
 
     /**
      * Please update the user name and external id to values that not exist
-     * Do the update in the test and in method 'callUserRegister()' in class 'RegisterTestsHelper'
+     * Please do the update in the tests and in method 'createRequestBody()' in class 'RegisterTestsHelper'
      * @throws Exception
      */
     @Test
