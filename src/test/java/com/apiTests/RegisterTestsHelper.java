@@ -19,18 +19,18 @@ public class RegisterTestsHelper {
     protected UserDetails userDetails;
 
     protected UserDetails callUserRegister(String userName, String password) throws Exception {
-        User user = new User( "KalturaOTTUser", userName, "xympdpkyymlh","1537875168491", "qaott2018+xympdpkyymlh1537875168491@gmail.com",
-                "xympdpkyymlh fake address", "xympdpkyymlh fake city", 7, "Please add new external id");
-        userRegister = new UserRegister(185, user, password);
-        userDetails = registerApiFunctions.register(registerEndPoint, userRegister);
-        return userDetails;
+        userRegister = createRequestBody(userName, password);
+        return userDetails = registerApiFunctions.register(registerEndPoint, userRegister);
     }
 
     protected RegisterError getErrorMessage(String userName, String password) throws Exception {
+        userRegister = createRequestBody(userName, password);
+        return error = registerApiFunctions.errorRegister(registerEndPoint, userRegister);
+    }
+
+    private UserRegister createRequestBody(String userName, String password) {
         User user = new User( "KalturaOTTUser", userName, "xympdpkyymlh","1537875168491", "qaott2018+xympdpkyymlh1537875168491@gmail.com",
-                "xympdpkyymlh fake address", "xympdpkyymlh fake city", 7, "Please add new external id");
-        userRegister = new UserRegister(185, user, password);
-        error = registerApiFunctions.errorRegister(registerEndPoint, userRegister);
-        return error;
+                "xympdpkyymlh fake address", "xympdpkyymlh fake city", 7, "<Please add new external id>");
+        return userRegister = new UserRegister(185, user, password);
     }
 }

@@ -14,13 +14,13 @@ public class RegisterTests extends RegisterTestsHelper{
      */
     @Test
     public void positiveTest() throws Exception {
-        userDetails = callUserRegister("Please add new user name", "password");
-        registerTestsValidation.validateUserDetails(userDetails, "Please add new u1111ser name", "Please add new external id");
+        userDetails = callUserRegister("<Please add new user name>", "password");
+        registerTestsValidation.validateUserDetails(userDetails, "Please add new user name", "<Please add new external id>");
     }
 
     @Test
     public void negativeTest() throws Exception {
-        error = getErrorMessage("Please add new user name", null);
+        error = getErrorMessage("<Please add new user name>", null);
         registerTestsValidation.validateErrorMessage(error, "Missing parameter [password]");
     }
 
